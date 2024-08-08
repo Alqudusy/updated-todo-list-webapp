@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alqudsy Updated Todo List App</title>
+    <meta name="description" content="A fun and interactive To-Do List app with features such as task management, filtering, and dark mode support.">
+    <meta name="keywords" content="To-Do List, Task Management, JavaScript, Web App, Dark Mode, Productivity">
+    <meta name="author" content="Alqudsy">
+    <meta property="og:title" content="Alqudsy Updated Todo List App">
+    <meta property="og:description" content="A fun and interactive To-Do List app with features such as task management, filtering, and dark mode support.">
+    <meta property="og:image" content="URL_TO_IMAGE">
+    <meta property="og:url" content="URL_TO_YOUR_APP">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Alqudsy Updated Todo List App">
+    <meta property="twitter:description" content="A fun and interactive To-Do List app with features such as task management, filtering, and dark mode support.">
+    <meta property="twitter:image" content="URL_TO_IMAGE">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+            <button id="theme-toggle">Switch to Dark Mode</button>
+        </header>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter a new task" required>
+            <input type="date" id="due-date-input">
+            <select id="category-input">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+            <select id="priority-input">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <div id="filters">
+            <button id="all-tasks">All Tasks</button>
+            <button id="pending-tasks">Pending Tasks</button>
+            <button id="completed-tasks">Completed Tasks</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
